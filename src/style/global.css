@@ -1,0 +1,151 @@
+@import url(../fonts/stylesheet.css);
+@import 'tippy.js/dist/tippy.css';
+
+:root {
+	--color-black-700: #262626;
+	--color-black-500: #636363;
+	--color-black-400: #888888;
+	--color-black-300: #eaeaea;
+	--color-black-100: #f5f5f7;
+	--color-white: #ffffff;
+	--color-black: var(--color-black-700);
+	--color-gray: var(--color-black-500);
+	--color-purple-500: #654ff0;
+	--color-purple-700: #513fc0;
+	--color-primary: var(--color-purple-500);
+}
+
+p {
+	margin: 0;
+}
+
+.text-black-500 {
+	color: var(--color-black-500);
+}
+
+body {
+	font-family: 'CircularXX TT', sans-serif;
+	color: var(--color-black);
+}
+.heading-1 {
+	font-size: clamp(48px, 10vw, 100px);
+	line-height: 0.95;
+	margin: 0;
+	letter-spacing: -2.25px;
+	font-weight: 700;
+}
+.heading-2 {
+	margin: 0;
+	font-size: 63px;
+	line-height: 60px;
+	letter-spacing: -2.25px;
+	font-weight: 700;
+}
+.heading-3 {
+	margin: 0;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: -2px;
+	font-weight: 500;
+}
+.heading-4 {
+	margin: 0;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.text-l {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+a {
+	color: var(--color-purple-500);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-purple-700);
+}
+
+.button {
+	padding: 14px 27px;
+	font-size: 19px;
+	line-height: 24px;
+	font-family: inherit;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: inherit;
+	border-radius: 8px;
+	box-shadow: inset 0px 3px 4px rgba(255, 255, 255, 0.2);
+	transition: all 200ms ease;
+	display: inline-block;
+	/* white-space: nowrap; */
+}
+
+.button:hover {
+	color: inherit;
+}
+
+.button.button-primary {
+	background-color: var(--color-purple-500);
+	color: var(--color-white);
+}
+.button.button-primary:hover {
+	background-color: var(--color-purple-700);
+}
+.button.button-secondary {
+	background-color: var(--color-black-100);
+	border: 1px solid var(--color-black-300);
+}
+.button.button-secondary:hover {
+	background-color: var(--color-black-300);
+}
+.button.button-outline {
+	border: 1px solid var(--color-black-500);
+	padding: 9px 27px;
+}
+.button.button-outline:hover {
+	border-color: var(--color-black-700);
+	background-color: var(--color-black-700);
+	color: var(--color-white);
+}
+
+.container {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+@media screen and (min-width: 1024px) {
+	.heading-2 {
+		font-size: 76px;
+		line-height: 72px;
+	}
+	.heading-3 {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.heading-4 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.text-l {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.container {
+		/* padding-left: 0; */
+		/* padding-right: 0; */
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*
+ 
+
+
+*/
