@@ -1,0 +1,2 @@
+# send all requests with no matching resource here to the new sdk domain
+/* https://internetcomputer.org/:splat 301
