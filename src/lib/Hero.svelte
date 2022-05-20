@@ -1,6 +1,6 @@
 <section class="container hero">
 	<h1 class="heading-1">
-		<span>Next Generation</span>
+		<span>Next generation</span>
 		<br />
 		<span>Smart Contracts</span>
 	</h1>
@@ -9,11 +9,11 @@
 		<img src="loader.webp" alt="" />
 	</div>
 	<p class="text-l">
-		Build smart contracts and dapps 100% on-chain on the world’s fastest and most powerful open-
-		source blockchain network: the Internet Computer
+		Build smart contracts and dapps 100% on-chain on the world’s fastest and most powerful
+		open&#8209;source blockchain network: the Internet Computer
 	</p>
 	<div>
-		<a class="button button-primary" href="https://internetcomputer.org">Start Building Web3</a>
+		<a class="button button-primary" href="https://internetcomputer.org">Start building Web3</a>
 	</div>
 </section>
 
