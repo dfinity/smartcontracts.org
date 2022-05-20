@@ -14,7 +14,6 @@
 		name="description"
 		content="Build smart contracts and dapps 100% on-chain on the Internet Computer, the world's fastest and most powerful open-source blockchain network"
 	/>
-	<html lang="en" />
 </svelte:head>
 
 <main>
