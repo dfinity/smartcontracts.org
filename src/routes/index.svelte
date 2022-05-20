@@ -8,6 +8,14 @@
 	import Footer from '../lib/Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Smart Contracts on the Internet Computer</title>
+	<meta
+		name="description"
+		content="Build smart contracts and dapps 100% on-chain on the Internet Computer, the world's fastest and most powerful open-source blockchain network"
+	/>
+</svelte:head>
+
 <main>
 	<Header />
 	<Hero />
