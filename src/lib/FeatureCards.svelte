@@ -6,9 +6,10 @@
 <section class="container features">
 	<div class="card">
 		<div class="column">
-			<h3 class="heading-3">Smart contracts serve webpages</h3>
+			<h3 class="heading-3">Serve websites from smart contracts</h3>
 			<p class="text-l text-black-500 ">
-				You can open canister smart contracts directly in your browser just like regular websites.
+				Interact with canister smart contracts directly from your browser just like regular
+				websites.
 			</p>
 		</div>
 		<div class="column nns-feature">
@@ -19,12 +20,12 @@
 		<div class="column">
 			<h3 class="heading-3">Users don’t need tokens and wallets</h3>
 			<p class=" text-l text-black-500 ">
-				Reverse gas model opens the door to free to use, truly user friendly dapps, ready for mass
-				adation.
+				The reverse gas model enables free-to-use, truly user-friendly dapps, ready for mass
+				adoption.
 			</p>
 			<p class="text-l">
 				<a href="https://dfinity.org/showcase" target="_blank"
-					>Explore Internet Computer Ecosystem →</a
+					>Explore Internet Computer ecosystem →</a
 				>
 			</p>
 		</div>
@@ -47,8 +48,8 @@
 		<div class="column">
 			<h3 class="heading-3">Cheapest on-chain storage</h3>
 			<p class="text-l text-black-500 ">
-				Reverse gas model opens the door to free to use, truly user friendly dapps, ready for mass
-				adation.
+				The cost of data storage and computation is stable, it doesn't depend on token prices or
+				block space, and novel wasm runtime allows efficient runtime execution.
 			</p>
 		</div>
 		<div class="column">
@@ -76,11 +77,11 @@
 		<div class="column">
 			<h3 class="heading-3">True scaling</h3>
 			<p class=" text-l text-black-500 ">
-				With the help of subnets the IC can practically scale to an unbounded number of dapps and
-				stored data.
+				By adding new subnets regularly, the IC scales to an unbounded number of dapps and allows
+				storage of unlimited data.
 			</p>
 			<p class="text-l">
-				<a href="https://dashboard.internetcomputer.org" target="_blank">See network stats →</a>
+				<a href="https://dashboard.internetcomputer.org" target="_blank">See Network Stats →</a>
 			</p>
 		</div>
 		<div class="column">

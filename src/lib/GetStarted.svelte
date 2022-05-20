@@ -3,9 +3,9 @@
 </script>
 
 <section class="container get-started">
-	<h2 class="heading-2">Now Build Anything on Infinite Web3 blockchain</h2>
+	<h2 class="heading-2">Now build anything on infinite Web3 blockchain</h2>
 	<div class="cta">
-		<a class="button button-primary" href="https://internetcomputer.org">Start Building</a>
+		<a class="button button-primary" href="https://internetcomputer.org">Start building</a>
 	</div>
 	<div class="languages">
 		<a
