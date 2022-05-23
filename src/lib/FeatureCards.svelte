@@ -81,7 +81,7 @@
 				storage of unlimited data.
 			</p>
 			<p class="text-l">
-				<a href="https://dashboard.internetcomputer.org" target="_blank">See Network Stats →</a>
+				<a href="https://dashboard.internetcomputer.org" target="_blank">See network stats →</a>
 			</p>
 		</div>
 		<div class="column">

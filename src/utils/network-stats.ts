@@ -68,18 +68,14 @@ export function getBlockRate(): Promise<number> {
 }
 
 export function getNodeCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/node-list')
+	return fetch('https://ic-api.internetcomputer.org/api/metrics/ic-nodes-count')
 		.then(
 			(res) =>
-				res.json() as Promise<
-					{
-						dc: string;
-						node_id: string;
-						status: [timestamp: number, status: string];
-					}[]
-				>
+				res.json() as Promise<{
+					ic_nodes_count: [timestamp: number, value: string][];
+				}>
 		)
-		.then((res) => res.length);
+		.then((res) => +res.ic_nodes_count[0][1]);
 }
 
 export function getSubnetCount(): Promise<number> {
