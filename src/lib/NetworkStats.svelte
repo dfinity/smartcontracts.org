@@ -23,10 +23,10 @@
 	<p class="note">with hundreds more waiting config in DCs</p>
 	<div class="filler" />
 	<p class="secondary-stat">
-		{nodeProviders} Node Providers <span class="note">(indie node operators)</span>
+		{nodeProviders} Node providers <span class="note">(indie node operators)</span>
 	</p>
 	<p class="secondary-stat">
-		{subnets} Subnet Blockchain <span class="note">(combined to 1 platform)</span>
+		{subnets} Subnet blockchain <span class="note">(combined to 1 platform)</span>
 	</p>
 {:else}
 	<h4 class="text-l skeleton" style="max-width: 50%;">&nbsp;</h4>
