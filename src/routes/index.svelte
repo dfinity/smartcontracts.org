@@ -14,6 +14,11 @@
 		name="description"
 		content="Build smart contracts and dapps 100% on-chain on the Internet Computer, the world's fastest and most powerful open-source blockchain network"
 	/>
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image" content="https://smartcontracts.org/share.jpg" />
+	<meta property="og:image:url" content="https://smartcontracts.org/share.jpg" />
+	<meta property="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <main>
