@@ -28,7 +28,18 @@
 				placement: 'bottom'
 			}}
 		>
-			<img src="/languages/rust-logo.png" alt="Rust SDK" />
+			<img src="/languages/rust-logo.png" alt="Rust CDK" />
+		</a>
+		<a
+			href="https://github.com/demergent-labs/azle"
+			target="_blank"
+			rel="noopener noreferrer"
+			use:tippy={{
+				content: `Community TypeScript CDK for the Internet Computer.`,
+				placement: 'bottom'
+			}}
+		>
+			<img src="/languages/ts-logo.svg" alt="Typescript SDK" class="ts-logo" />
 		</a>
 		<a
 			href="https://smartcontracts.org/docs/developers-guide/webpack-config.html"
@@ -167,5 +178,9 @@
 		border: 1px solid var(--color-black-400);
 
 		color: var(--color-white);
+	}
+	.ts-logo {
+		padding: 3px 2px 3px 4px;
+		box-sizing: border-box;
 	}
 </style>
