@@ -22,7 +22,6 @@
 		align-items: center;
 	}
 
-
 	.navbar {
 		list-style-type: none;
 		flex: 1;
@@ -30,10 +29,10 @@
 		justify-content: flex-end;
 	}
 
-	.navbar a {
+	/* .navbar a {
 		text-decoration: none;
 		color: inherit;
 
 		font-size: 15px;
-	}
+	} */
 </style>

@@ -2,7 +2,7 @@
 	import 'normalize.css';
 
 	import { page } from '$app/stores';
-	import { browser, dev } from '$app/env';
+	import { browser, dev } from '$app/environment';
 	import { tick } from 'svelte';
 
 	page.subscribe((p) => {
