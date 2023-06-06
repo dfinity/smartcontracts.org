@@ -9,17 +9,14 @@ export function getBytesStored(): Promise<number> {
 		.then((res) => +res.memory_usage[1]);
 }
 export function getNodeProviders(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/node-providers/count')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/node-providers-count')
 		.then(
 			(res) =>
 				res.json() as Promise<{
-					node_providers: {
-						dc: 'all';
-						node_providers: number;
-					}[];
+					count: number;
 				}>
 		)
-		.then((res) => +res.node_providers[0].node_providers);
+		.then((res) => +res.count);
 }
 
 export function getTransactionRate(): Promise<number> {
@@ -33,19 +30,8 @@ export function getTransactionRate(): Promise<number> {
 		.then((res) => +res.message_execution_rate[0][1]);
 }
 
-export function getBlockCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/pblock')
-		.then(
-			(res) =>
-				res.json() as Promise<{
-					block: [[timestamp: number, height: string]];
-				}>
-		)
-		.then((res) => +res.block[0][1]);
-}
-
 export function getCanisterCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/registered-canisters')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/metrics/registered-canisters-count')
 		.then(
 			(res) =>
 				res.json() as Promise<{
@@ -57,7 +43,7 @@ export function getCanisterCount(): Promise<number> {
 }
 
 export function getBlockRate(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/block-rate')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/metrics/block-rate')
 		.then(
 			(res) =>
 				res.json() as Promise<{
@@ -68,29 +54,29 @@ export function getBlockRate(): Promise<number> {
 }
 
 export function getNodeCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/ic-nodes-count')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/metrics/ic-nodes-count')
 		.then(
 			(res) =>
 				res.json() as Promise<{
-					ic_nodes_count: [timestamp: number, value: string][];
+					total_nodes: [timestamp: number, value: string][];
 				}>
 		)
-		.then((res) => +res.ic_nodes_count[0][1]);
+		.then((res) => +res.total_nodes[0][1]);
 }
 
 export function getSubnetCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/ic-subnet-total')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/metrics/ic-subnet-total')
 		.then(
 			(res) =>
 				res.json() as Promise<{
-					ic_subnet_total: [timestamp: number, count: string];
+					ic_subnet_total: [timestamp: number, count: string][];
 				}>
 		)
-		.then((res) => +res.ic_subnet_total[1]);
+		.then((res) => +res.ic_subnet_total[0][1]);
 }
 
 export function getCpuCoreCount(): Promise<number> {
-	return fetch('https://ic-api.internetcomputer.org/api/metrics/ic-cpu-cores')
+	return fetch('https://ic-api.internetcomputer.org/api/v3/metrics/ic-cpu-cores')
 		.then(
 			(res) =>
 				res.json() as Promise<{
